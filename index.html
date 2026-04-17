@@ -7,8 +7,17 @@
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
   <style>
-    body { margin:0; font-family: Arial, sans-serif; }
-    #map { position:absolute; top:0; bottom:0; width:100%; }
+  html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+#map {
+  position: fixed;
+  inset: 0;
+}
     .menu {
       position:absolute; z-index:2; background: rgba(255,255,255,0.95);
       margin:12px; padding:10px; border-radius:6px; box-shadow:0 1px 4px rgba(0,0,0,.2);
@@ -39,6 +48,8 @@
   // -------------------------------------
 
   mapboxgl.accessToken = MAPBOX_TOKEN;
+
+  console.log("WebGL supported:", mapboxgl.supported());
 
   const map = new mapboxgl.Map({
     container: 'map',
