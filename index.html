@@ -36,6 +36,7 @@
   <label><input type="checkbox" data-layer="Bear Observations" checked> Bear Observations</label>
   <label><input type="checkbox" data-layer="Moose Observations" checked> Moose Observations</label>
   <label><input type="checkbox" data-layer="Wolf Observations" checked> Wolf Observations</label>
+  <label><input type="checkbox" data-layer="Wolf Collar Data" checked> Wolf Collar Unique Identifier Data</label>
 
 </div>
 
@@ -44,7 +45,7 @@
   const MAPBOX_TOKEN = 'pk.eyJ1Ijoia2ViYW93ZWsiLCJhIjoiY21teXVkcGJtMDFrdzJwcHpwNm93djhzYyJ9.ebxif9cg-1zkxz_LQcBOSA';
   const STYLE_URL = 'mapbox://styles/kebaowek/cmo2f96ig001c01rl2il8hpsd'; // from Mapbox Studio
   // The layer IDs below must match the layer IDs you used in Mapbox Studio exactly.
-  const layerIds = ['Deer Observations','Bear Observations','Moose Observations','Wolf Observations'];
+  const layerIds = ['Deer Observations','Bear Observations','Moose Observations','Wolf Observations', 'Wolf Collar Unique Identifier Data'];
   // -------------------------------------
 
   mapboxgl.accessToken = MAPBOX_TOKEN;
