@@ -39,7 +39,9 @@
   <label><input type="checkbox" data-layer="Wolf Observations" checked> Wolf Observations</label>
   <label><input type="checkbox" data-layer="Wolf Observations 2025-2026" checked> Wolf Observations 2025-2026</label>
   <label>Wolf Collar Tracking Data</label>
-  <label><input type="checkbox" data-layer="36140 Collar" checked> 36140 Collar</label>
+  <label> <input type="checkbox" data-layer="36140 Collar" checked> 
+    <img src="Kebaowek/Symbols/36140 Collar.png" class="layer-icon" alt="Collar 36140"> 36140 Collar
+  </label>
   <label><input type="checkbox" data-layer="36144A Collar" checked> 36144A Collar</label>
   <label><input type="checkbox" data-layer="36144B Collar" checked> 36144B Collar</label>
   <label><input type="checkbox" data-layer="687712A Collar" checked> 687712A Collar</label>
@@ -53,7 +55,7 @@
   const MAPBOX_TOKEN = 'pk.eyJ1Ijoia2ViYW93ZWsiLCJhIjoiY21teXVkcGJtMDFrdzJwcHpwNm93djhzYyJ9.ebxif9cg-1zkxz_LQcBOSA';
   const STYLE_URL = 'mapbox://styles/kebaowek/cmr503704002a01qo6cbuffth'; // from Mapbox Studio
   // The layer IDs below must match the layer IDs you used in Mapbox Studio exactly.
-  const layerIds = ['Deer Observations','Bear Observations','Moose Observations','Wolf Observations', 'Wolf Observations 2025-2026', ' Wolf Collar Tracking Data', 'Wolf Observations 2025-2026', '36144B Collar', '687712A Collar', '687714A Collar', '704623A Collar', '704624A Collar'];
+  const layerIds = ['Deer Observations','Bear Observations','Moose Observations','Wolf Observations', 'Wolf Observations 2025-2026', '36140 Collar', '36144A Collar', '36144B Collar', '687712A Collar', '687714A Collar', '704623A Collar', '704624A Collar'];
   // -------------------------------------
 
   mapboxgl.accessToken = MAPBOX_TOKEN;
@@ -128,14 +130,6 @@
 
           <div style="font-size:12px; color:#555;">
             ${date}
-          </div>
-          
-          <div style="font-size:14px; font-weight:bold;">
-           ${Category}
-          </div>
-
-           <div style="font-size:12px; color:#555;">
-           ${Observatio}
           </div>
 
         </div>
